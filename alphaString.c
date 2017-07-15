@@ -24,3 +24,10 @@ struct alphaString setAlphaString(char *string)
 
 	return alphaString;
 }
+
+void freeAlphaString(struct alphaString alphaString)
+{
+	// Add a null-terminator so free won't start acting all wierd
+	alphaString.string[alphaString.len+1] = '\0';
+	free(alphaString.string);
+}

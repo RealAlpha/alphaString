@@ -8,3 +8,5 @@ struct alphaString
 char *getAlphaString(struct alphaString alphaString);
 // Stores a char* as an alphaString
 struct alphaString setAlphaString(char *string);
+// Frees the memory an alphaString allocated
+void freeAlphaString(struct alphaString alphaString);

@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 			representationBuffer[alphaString.len + 2] = '\0';
 			printf("%s's alphastring representation: %s\n", argv[i], representationBuffer);
 			free(representationBuffer);
+			freeAlphaString(alphaString);
 		}
 	}
 }
